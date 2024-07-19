@@ -18,7 +18,7 @@
         background-color: transparent;
         color: white;
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 999px;
         max-width: 600px;
         margin: auto;
       }
@@ -36,7 +36,7 @@
         padding: 15px;
         background-color: white;
         border: none;
-        border-radius: 15px;
+        border-radius: 999px;
         font-size: 14px;
       }
 
@@ -67,7 +67,7 @@
         color: white;
         cursor: pointer;
         font-size: 16px;
-        width: auto;
+        width: 50%;
         margin-top: 20px;
       }
     </style>
@@ -76,14 +76,7 @@
     <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-      <form
-        id="webform6328329000000496336"
-        action="https://crm.zoho.com/crm/WebForm"
-        name="WebForm6328329000000496336"
-        method="POST"
-        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6328329000000496336()'
-        accept-charset="UTF-8"
-      >
+      
         <input
           type="text"
           style="display: none"
@@ -145,7 +138,7 @@
         </div>
         <div class="zcwf_row full-width">
           <select id="COBJ1CF5" name="COBJ1CF5">
-            <option value="-None-">Select a Service</option>
+            <option value="-None-">Select a Product</option>
             <option value="AG&#x20;-&#x20;ZYME">AG - ZYME</option>
             <option value="Poultry&#x20;Zyme">Poultry Zyme</option>
             <option value="Fish&#x20;Zyme">Fish Zyme</option>
@@ -161,120 +154,10 @@
             type="submit"
             id="formsubmit"
             class="formsubmit zcwf_button"
-            value="Request More Information"
+            value="Submit"
           />
         </div>
-      </form>
+      
     </div>
-
-    <script>
-      function validateEmail6328329000000496336() {
-        var form = document.forms["WebForm6328329000000496336"];
-        var emailFld = form.querySelectorAll("[ftype=email]");
-        var i;
-        for (i = 0; i < emailFld.length; i++) {
-          var emailVal = emailFld[i].value;
-          if (emailVal.replace(/^\s+|\s+$/g, "").length != 0) {
-            var atpos = emailVal.indexOf("@");
-            var dotpos = emailVal.lastIndexOf(".");
-            if (
-              atpos < 1 ||
-              dotpos < atpos + 2 ||
-              dotpos + 2 >= emailVal.length
-            ) {
-              alert("Please enter a valid email address.");
-              emailFld[i].focus();
-              return false;
-            }
-          }
-        }
-        return true;
-      }
-
-      function checkMandatory6328329000000496336() {
-        var mndFileds = new Array(
-          "NAME",
-          "Email",
-          "COBJ1CF3",
-          "COBJ1CF4",
-          "COBJ1CF5"
-        );
-        var fldLangVal = new Array(
-          "First\x20Name",
-          "Email",
-          "Last\x20Name",
-          "Phone\x20\x20Number",
-          "Products"
-        );
-        for (i = 0; i < mndFileds.length; i++) {
-          var fieldObj =
-            document.forms["WebForm6328329000000496336"][mndFileds[i]];
-          if (fieldObj) {
-            if (fieldObj.value.replace(/^\s+|\s+$/g, "").length == 0) {
-              if (fieldObj.type == "file") {
-                alert("Please select a file to upload.");
-                fieldObj.focus();
-                return false;
-              }
-              alert(fldLangVal[i] + " cannot be empty.");
-              fieldObj.focus();
-              return false;
-            } else if (fieldObj.nodeName == "SELECT") {
-              if (fieldObj.options[fieldObj.selectedIndex].value == "-None-") {
-                alert(fldLangVal[i] + " cannot be none.");
-                fieldObj.focus();
-                return false;
-              }
-            } else if (fieldObj.type == "checkbox") {
-              if (fieldObj.checked == false) {
-                alert("Please accept  " + fldLangVal[i]);
-                fieldObj.focus();
-                return false;
-              }
-            }
-            try {
-              if (fieldObj.name == "Last Name") {
-                name = fieldObj.value;
-              }
-            } catch (e) {}
-          }
-        }
-        if (!validateEmail6328329000000496336()) {
-          return false;
-        }
-
-        var urlparams = new URLSearchParams(window.location.search);
-        if (
-          urlparams.has("service") &&
-          urlparams.get("service") === "smarturl"
-        ) {
-          var webform = document.getElementById("webform6328329000000496336");
-          var service = urlparams.get("service");
-          var smarturlfield = document.createElement("input");
-          smarturlfield.setAttribute("type", "hidden");
-          smarturlfield.setAttribute("value", service);
-          smarturlfield.setAttribute("name", "service");
-          webform.appendChild(smarturlfield);
-        }
-
-        document
-          .querySelector(".crmWebToEntityForm .formsubmit")
-          .setAttribute("disabled", true);
-      }
-
-      function tooltipShow6328329000000496336(el) {
-        var tooltip = el.nextElementSibling;
-        var tooltipDisplay = tooltip.style.display;
-        if (tooltipDisplay == "none") {
-          var allTooltip = document.getElementsByClassName("zcwf_tooltip_over");
-          for (i = 0; i < allTooltip.length; i++) {
-            allTooltip[i].style.display = "none";
-          }
-          tooltip.style.display = "block";
-        } else {
-          tooltip.style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
