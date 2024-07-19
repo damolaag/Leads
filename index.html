@@ -1,198 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        html, body {
-            margin: 0;
-            background-color: transparent;
-        }
+      html,
+      body {
+        margin: 0;
+        background-color: transparent;
+      }
 
-        .zcwf_lblLeft {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: transparent;
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 600px;
-            margin: auto;
-        }
+      .zcwf_lblLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        padding: 20px;
+        border-radius: 999px;
+        max-width: 600px;
+        margin: auto;
+      }
 
-        .zcwf_row {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-bottom: 10px;
-        }
+      .zcwf_row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+      }
 
-        .zcwf_row input, .zcwf_row select {
-            width: 48%;
-            padding: 15px;
-            background-color: white;
-            border: none;
-            border-radius: 15px;
-            font-size: 14px;
-        }
+      .zcwf_row input,
+      .zcwf_row select {
+        width: 48%;
+        padding: 15px;
+        background-color: white;
+        border: none;
+        border-radius: 999px;
+        font-size: 14px;
+      }
 
-        .zcwf_row input::placeholder, .zcwf_row select {
-            color: grey;
-        }
+      .zcwf_row input::placeholder,
+      .zcwf_row select {
+        color: grey;
+      }
 
-        .zcwf_row select {
-            color: grey;
-        }
+      .zcwf_row select {
+        color: grey;
+      }
 
-        .zcwf_row.full-width {
-            width: 100%;
-        }
+      .zcwf_row.full-width {
+        width: 100%;
+      }
 
-        .zcwf_row.full-width input, .zcwf_row.full-width select {
-            width: 100%;
-        }
+      .zcwf_row.full-width input,
+      .zcwf_row.full-width select {
+        width: 100%;
+      }
 
-        .zcwf_row.submit-row {
-            justify-content: center;
-        }
+      .zcwf_row.submit-row {
+        justify-content: center;
+      }
 
-        .zcwf_row input[type="submit"] {
-            background-color: blue;
-            color: white;
-            cursor: pointer;
-            font-size: 16px;
-            width: auto;
-            margin-top: 20px;
-        }
+      .zcwf_row input[type="submit"] {
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        width: 50%;
+        margin-top: 20px;
+      }
     </style>
-</head>
-<body>
-    <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <meta http-equiv='content-type' content='text/html;charset=UTF-8'>
-        <form id='webform6328329000000496336' action='https://crm.zoho.com/crm/WebForm' name='WebForm6328329000000496336' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6328329000000496336()' accept-charset='UTF-8'>
-            <input type='text' style='display:none;' name='xnQsjsdp' value='0082079540e0bd6468803993687d222489e37dc130491d7f7788dad515e1ffb6'>
-            <input type='hidden' name='zc_gad' id='zc_gad' value=''>
-            <input type='text' style='display:none;' name='xmIwtLD' value='eb80abc107caafb7b6144157fe99321a9bd72e0e4ed025f5fd93e6126d09b2753b4b2df4771085d13679ef4142d2ed5b'>
-            <input type='text' style='display:none;' name='actionType' value='Q3VzdG9tTW9kdWxlMQ=='>
-            <input type='text' style='display:none;' name='returnURL' value='null'>
-            <!-- Do not remove this code. -->
+  </head>
+  <body>
+    <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+      <form
+        id="webform6328329000000496336"
+        action="https://crm.zoho.com/crm/WebForm"
+        name="WebForm6328329000000496336"
+        method="POST"
+        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory6328329000000496336()'
+        accept-charset="UTF-8"
+      >
+        <input
+          type="text"
+          style="display: none"
+          name="xnQsjsdp"
+          value="0082079540e0bd6468803993687d222489e37dc130491d7f7788dad515e1ffb6"
+        />
+        <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+        <input
+          type="text"
+          style="display: none"
+          name="xmIwtLD"
+          value="eb80abc107caafb7b6144157fe99321a9bd72e0e4ed025f5fd93e6126d09b2753b4b2df4771085d13679ef4142d2ed5b"
+        />
+        <input
+          type="text"
+          style="display: none"
+          name="actionType"
+          value="Q3VzdG9tTW9kdWxlMQ=="
+        />
+        <input
+          type="text"
+          style="display: none"
+          name="returnURL"
+          value="null"
+        />
+        <!-- Do not remove this code. -->
 
-            <div class='zcwf_row'>
-                <input type='text' id='NAME' name='NAME' maxlength='120' placeholder="Enter First Name">
-                <input type='text' id='COBJ1CF3' name='COBJ1CF3' maxlength='255' placeholder="Enter Last Name">
-            </div>
-            <div class='zcwf_row'>
-                <input type='email' id='Email' name='Email' maxlength='100' placeholder="Enter Email">
-                <input type='text' id='COBJ1CF4' name='COBJ1CF4' maxlength='15' placeholder="Enter Phone Number">
-            </div>
-            <div class='zcwf_row full-width'>
-                <select id='COBJ1CF5' name='COBJ1CF5'>
-                    <option value='-None-'>Select a Service</option>
-                    <option value='AG&#x20;-&#x20;ZYME'>AG - ZYME</option>
-                    <option value='Poultry&#x20;Zyme'>Poultry Zyme</option>
-                    <option value='Fish&#x20;Zyme'>Fish Zyme</option>
-                    <option value='Evergreen&#x20;Zyme'>Evergreen Zyme</option>
-                    <option value='Livestock&#x20;Zyme'>Livestock Zyme</option>
-                    <option value='Agric&#x20;Zyme&#x20;3x'>Agric Zyme 3x</option>
-                    <option value='Pesti&#x20;Zyme'>Pesti Zyme</option>
-                    <option value='Home&#x20;Farming&#x20;Kit'>Home Farming Kit</option>
-                </select>
-            </div>
-            <div class='zcwf_row submit-row'>
-                <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Request More Information'>
-            </div>
-        </form>
+        <div class="zcwf_row">
+          <input
+            type="text"
+            id="NAME"
+            name="NAME"
+            maxlength="120"
+            placeholder="Enter First Name"
+          />
+          <input
+            type="text"
+            id="COBJ1CF3"
+            name="COBJ1CF3"
+            maxlength="255"
+            placeholder="Enter Last Name"
+          />
+        </div>
+        <div class="zcwf_row">
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            maxlength="100"
+            placeholder="Enter Email"
+          />
+          <input
+            type="text"
+            id="COBJ1CF4"
+            name="COBJ1CF4"
+            maxlength="15"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+        <div class="zcwf_row full-width">
+          <select id="COBJ1CF5" name="COBJ1CF5">
+            <option value="-None-">Select a Product</option>
+            <option value="AG&#x20;-&#x20;ZYME">AG - ZYME</option>
+            <option value="Poultry&#x20;Zyme">Poultry Zyme</option>
+            <option value="Fish&#x20;Zyme">Fish Zyme</option>
+            <option value="Evergreen&#x20;Zyme">Evergreen Zyme</option>
+            <option value="Livestock&#x20;Zyme">Livestock Zyme</option>
+            <option value="Agric&#x20;Zyme&#x20;3x">Agric Zyme 3x</option>
+            <option value="Pesti&#x20;Zyme">Pesti Zyme</option>
+            <option value="Home&#x20;Farming&#x20;Kit">Home Farming Kit</option>
+          </select>
+        </div>
+        <div class="zcwf_row submit-row">
+          <input
+            type="submit"
+            id="formsubmit"
+            class="formsubmit zcwf_button"
+            value="Submit"
+          />
+        </div>
+      </form>
     </div>
 
     <script>
-        function validateEmail6328329000000496336() {
-            var form = document.forms['WebForm6328329000000496336'];
-            var emailFld = form.querySelectorAll('[ftype=email]');
-            var i;
-            for (i = 0; i < emailFld.length; i++) {
-                var emailVal = emailFld[i].value;
-                if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                    var atpos = emailVal.indexOf('@');
-                    var dotpos = emailVal.lastIndexOf('.');
-                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                        alert('Please enter a valid email address.');
-                        emailFld[i].focus();
-                        return false;
-                    }
-                }
+      function validateEmail6328329000000496336() {
+        var form = document.forms["WebForm6328329000000496336"];
+        var emailFld = form.querySelectorAll("[ftype=email]");
+        var i;
+        for (i = 0; i < emailFld.length; i++) {
+          var emailVal = emailFld[i].value;
+          if (emailVal.replace(/^\s+|\s+$/g, "").length != 0) {
+            var atpos = emailVal.indexOf("@");
+            var dotpos = emailVal.lastIndexOf(".");
+            if (
+              atpos < 1 ||
+              dotpos < atpos + 2 ||
+              dotpos + 2 >= emailVal.length
+            ) {
+              alert("Please enter a valid email address.");
+              emailFld[i].focus();
+              return false;
             }
-            return true;
+          }
         }
+        return true;
+      }
 
-        function checkMandatory6328329000000496336() {
-            var mndFileds = new Array('NAME', 'Email', 'COBJ1CF3', 'COBJ1CF4', 'COBJ1CF5');
-            var fldLangVal = new Array('First\x20Name', 'Email', 'Last\x20Name', 'Phone\x20\x20Number', 'Products');
-            for (i = 0; i < mndFileds.length; i++) {
-                var fieldObj = document.forms['WebForm6328329000000496336'][mndFileds[i]];
-                if (fieldObj) {
-                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                        if (fieldObj.type == 'file') {
-                            alert('Please select a file to upload.');
-                            fieldObj.focus();
-                            return false;
-                        }
-                        alert(fldLangVal[i] + ' cannot be empty.');
-                        fieldObj.focus();
-                        return false;
-                    } else if (fieldObj.nodeName == 'SELECT') {
-                        if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                            alert(fldLangVal[i] + ' cannot be none.');
-                            fieldObj.focus();
-                            return false;
-                        }
-                    } else if (fieldObj.type == 'checkbox') {
-                        if (fieldObj.checked == false) {
-                            alert('Please accept  ' + fldLangVal[i]);
-                            fieldObj.focus();
-                            return false;
-                        }
-                    }
-                    try {
-                        if (fieldObj.name == 'Last Name') {
-                            name = fieldObj.value;
-                        }
-                    } catch (e) {}
-                }
-            }
-            if (!validateEmail6328329000000496336()) {
+      function checkMandatory6328329000000496336() {
+        var mndFileds = new Array(
+          "NAME",
+          "Email",
+          "COBJ1CF3",
+          "COBJ1CF4",
+          "COBJ1CF5"
+        );
+        var fldLangVal = new Array(
+          "First\x20Name",
+          "Email",
+          "Last\x20Name",
+          "Phone\x20\x20Number",
+          "Products"
+        );
+        for (i = 0; i < mndFileds.length; i++) {
+          var fieldObj =
+            document.forms["WebForm6328329000000496336"][mndFileds[i]];
+          if (fieldObj) {
+            if (fieldObj.value.replace(/^\s+|\s+$/g, "").length == 0) {
+              if (fieldObj.type == "file") {
+                alert("Please select a file to upload.");
+                fieldObj.focus();
                 return false;
+              }
+              alert(fldLangVal[i] + " cannot be empty.");
+              fieldObj.focus();
+              return false;
+            } else if (fieldObj.nodeName == "SELECT") {
+              if (fieldObj.options[fieldObj.selectedIndex].value == "-None-") {
+                alert(fldLangVal[i] + " cannot be none.");
+                fieldObj.focus();
+                return false;
+              }
+            } else if (fieldObj.type == "checkbox") {
+              if (fieldObj.checked == false) {
+                alert("Please accept  " + fldLangVal[i]);
+                fieldObj.focus();
+                return false;
+              }
             }
-
-            var urlparams = new URLSearchParams(window.location.search);
-            if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-                var webform = document.getElementById('webform6328329000000496336');
-                var service = urlparams.get('service');
-                var smarturlfield = document.createElement('input');
-                smarturlfield.setAttribute('type', 'hidden');
-                smarturlfield.setAttribute('value', service);
-                smarturlfield.setAttribute('name', 'service');
-                webform.appendChild(smarturlfield);
-            }
-
-            document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+            try {
+              if (fieldObj.name == "Last Name") {
+                name = fieldObj.value;
+              }
+            } catch (e) {}
+          }
+        }
+        if (!validateEmail6328329000000496336()) {
+          return false;
         }
 
-        function tooltipShow6328329000000496336(el) {
-            var tooltip = el.nextElementSibling;
-            var tooltipDisplay = tooltip.style.display;
-            if (tooltipDisplay == 'none') {
-                var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                for (i = 0; i < allTooltip.length; i++) {
-                    allTooltip[i].style.display = 'none';
-                }
-                tooltip.style.display = 'block';
-            } else {
-                tooltip.style.display = 'none';
-            }
+        var urlparams = new URLSearchParams(window.location.search);
+        if (
+          urlparams.has("service") &&
+          urlparams.get("service") === "smarturl"
+        ) {
+          var webform = document.getElementById("webform6328329000000496336");
+          var service = urlparams.get("service");
+          var smarturlfield = document.createElement("input");
+          smarturlfield.setAttribute("type", "hidden");
+          smarturlfield.setAttribute("value", service);
+          smarturlfield.setAttribute("name", "service");
+          webform.appendChild(smarturlfield);
         }
+
+        document
+          .querySelector(".crmWebToEntityForm .formsubmit")
+          .setAttribute("disabled", true);
+      }
+
+      function tooltipShow6328329000000496336(el) {
+        var tooltip = el.nextElementSibling;
+        var tooltipDisplay = tooltip.style.display;
+        if (tooltipDisplay == "none") {
+          var allTooltip = document.getElementsByClassName("zcwf_tooltip_over");
+          for (i = 0; i < allTooltip.length; i++) {
+            allTooltip[i].style.display = "none";
+          }
+          tooltip.style.display = "block";
+        } else {
+          tooltip.style.display = "none";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
