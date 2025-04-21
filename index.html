@@ -9,13 +9,8 @@
 					html,body{
 						margin: 0px;
 					}
-					.formsubmit.zcwf_button{
-						color: white !important;
-						background: transparent linear-gradient(0deg, #0279FF 0%, #00A3F3 100%);
-					}
 					#crmWebToEntityForm.zcwf_lblLeft{
 						width: 100%;
-						padding: 25px;
 						margin: 0 auto;
 						box-sizing: border-box;
 					}
@@ -27,28 +22,26 @@
 					#crmWebToEntityForm *{
 					direction: ltr;
 					}
-					.zcwf_lblLeft .zcwf_title{
-					word-wrap: break-word;
-					padding: 0px 6px 10px;
-					font-weight: bold }
-					.zcwf_lblLeft.cpT_primaryBtn:hover{
-					background: linear-gradient(#02acff 0,#006be4 100%)no-repeat padding-box !important;
-					box-shadow: 0 -2px 0 0  #0159b9 inset !important;
-					border: 0 !important;
-					color:  #fff !important;
-					outline: 0 !important;
-					}
+                    .zcwf_lblLeft .zcwf_title {
+                        word-wrap: break-word;
+                        font-weight: bold
+                    }
+                    .zcwf_lblLeft.cpT_primaryBtn:hover {
+                    background: linear-gradient(#02acff 0, #006be4 100%) no-repeat padding-box !important;
+                    box-shadow: 0 -2px 0 0 #0159b9 inset !important;
+                    border: 0 !important;
+                    color: #fff !important;
+                    outline: 0 !important;
+                    }
 					.zcwf_lblLeft .zcwf_col_fld input[type = text], input[type = password], .zcwf_lblLeft .zcwf_col_fld textarea{
-					width: 60%;
-					border: 1px solid  #c0c6cc !important;
+					width: 100%;
 					resize: vertical;
-					border-radius: 2px;
+					border-radius: 6px;
 					float: left;
 					}
 					.zcwf_lblLeft .zcwf_col_lab{
-					width: 30%;
+					width: 100%;
 					word-break: break-word;
-					padding: 0px 6px 0px;
 					margin-right: 10px;
 					margin-top: 5px;
 					float: left;
@@ -56,7 +49,7 @@
 					}
 					.zcwf_lblLeft .zcwf_col_fld{
 					float: left;
-					width: 68%;
+					width: 100%;
 					padding: 0px 6px 0px;
 					position: relative;
 					margin-top: 5px;
@@ -68,15 +61,17 @@
 					.dIB {display: inline-block;
 					}
 					.zcwf_lblLeft .zcwf_col_fld_slt{
-					width: 60%;
-					border: 1px solid  #ccc;
-					background:  #fff;
+					width: 100%;
+					background:  #F0F0F0;
 					border-radius: 4px;
-					font-size: 12px;
+					font-size: 14px;
 					float: left;
 					resize: vertical;
-					padding: 2px 5px;
+					padding: 8px;
 					}
+                    .zcwf_row {
+                        display: grid;
+                    }
 					.zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after{
 					content: '';
 					display: table;
@@ -85,7 +80,7 @@
 					.zcwf_lblLeft .zcwf_col_help{
 					float: left;
 					margin-left: 7px;
-					font-size: 12px;
+					font-size: 14px;
 					max-width: 35%;
 					word-break: break-word;
 					}
@@ -108,31 +103,29 @@
 					.zcwf_lblLeft .formsubmit{
 					margin-right: 5px;
 					cursor: pointer;
-					color:  #313949;
-					font-size: 12px;
+					font-size: 14px;
 					}
 					.zcwf_lblLeft .zcwf_privacy_txt{
 					width: 90%;
 					color: rgb(0, 0, 0);
-					font-size: 12px;
-					font-family: Arial;
+					font-size: 14px;
 					display: inline-block;
 					vertical-align: top;
-					color:  #313949;
+					color: var(--baseColor);
 					padding-top: 2px;
 					margin-left: 6px;
 					}
 					.zcwf_lblLeft .zcwf_button{
-					font-size: 12px;
-					color:  #313949;
-					border: 1px solid  #c0c6cc;
-					padding: 3px 9px;
+					font-size: 14px;
+					padding: 10px;
 					border-radius: 4px;
 					cursor: pointer;
-					max-width: 120px;
+                    color: white;
+                    width: 100%;
 					overflow: hidden;
 					text-overflow: ellipsis;
 					white-space: nowrap;
+                    background-color: rgba(249, 37, 57, 1);
 					}
 					.zcwf_lblLeft .zcwf_tooltip_over{
 					position: relative;
@@ -146,7 +139,7 @@
 					word-break: break-word;
 					min-width: 100px;
 					max-width: 150px;
-					color:  #313949;
+                    color: var(--baseColor);
 					z-index: 100;
 					}
 					.zcwf_lblLeft .zcwf_ckbox{
@@ -170,10 +163,20 @@
 					.zcwf_lblLeft .zcwf_col_help {width: 40%;
 					}
 					}
+                    input {
+                        padding: 0.375rem;
+                        background-color: rgba(172, 172, 172, 0.25);
+                        border-radius: 0.375rem;
+                        border: none;
+                    }
+        
+                    button {
+                        width: 100%;
+                    }
 				</style>
   </head>
   <body>
-<!-- Note :
+ <!-- Note :
    - You can modify the font style and form style to suit your website. 
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
@@ -182,19 +185,17 @@
 	<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
 		<META HTTP-EQUIV = 'content-type' CONTENT = 'text/html;charset=UTF-8'>
 			<form id = 'webform6383044000000668002' action = 'https://crm.zoho.com/crm/WebToLeadForm' name = WebToLeads6383044000000668002 method = 'POST' onSubmit = 'javascript:document.charset="UTF-8"; return checkMandatory6383044000000668002()' accept-charset = 'UTF-8'>
-				<input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = 'f05c3395370d8175d2525104238a5798a7a40380cdb7b7606e5f7cbfc4449657'>
+				<input type = 'text' style = 'display:none;' name = 'xnQsjsdp' value = 'ba10a75df983a503470c6edc6a07489d6c48815a66429366d75412d8a76a93ea'>
 				</input>
 				<input type = 'hidden' name = 'zc_gad' id = 'zc_gad' value = ''>
 				</input>
-				<input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = 'f21fc417fb83c1a21997b23973d43b84a9c1777f5c9fe80c9c82063b439074d2490422dc18b5778878b928d1f31f8f91'>
+				<input type = 'text' style = 'display:none;' name = 'xmIwtLD' value = 'a9e336f001812648f3dfe53a9d41891c45fa50252709b0980642c4496b40d448d614a1d81ded4d621a10b1c7babc80d3'>
 				</input>
 				<input type = 'text' style = 'display:none;' name = 'actionType' value = 'TGVhZHM='>
 				</input>
 				<input type = 'text' style = 'display:none;' name = 'returnURL' value = 'https&#x3a;&#x2f;&#x2f;dochase.com&#x2f;success&#x2f;'>
 				</input>
-				<div class = 'zcwf_title' style = 'max-width: 600px;color: black; font-family:Arial;'>
-					web Leads
-				</div>
+		
 				<div class = 'zcwf_row'>
 					<div class = 'zcwf_col_lab' style = 'font-size:12px; font-family: Arial;'>
 						<label for = 'First_Name'>
@@ -411,8 +412,7 @@
 					<div class = 'zcwf_col_lab'>
 					</div>
 					<div class = 'zcwf_col_fld'>
-						<input type = 'submit' id = 'formsubmit' role = 'button' class = 'formsubmit zcwf_button' value = 'Submit' aria-label = 'Submit' title = 'Submit'>
-							<input type = 'reset' class = 'zcwf_button' role = 'button' name = 'reset' value = 'Reset' aria-label = 'Reset' title = 'Reset'>
+						<input type = 'submit' id = 'formsubmit' role = 'button' class = 'formsubmit zcwf_button' value = 'Contact Sales' aria-label = 'Submit' title = 'Submit'>
 							</div>
 						</div>
 						<script>
